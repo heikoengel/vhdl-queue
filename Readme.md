@@ -1,9 +1,11 @@
 # Generic VHDL Queue Implementation
 
 Generic VHDL Queue implementation losely aligned to SystemVerilog
-queues. The package is parametrized with the queue entry data type, so
-it can be used with any VHDL data type. Examples could be queues of
-`integer`, `std_logic_vector`, `real`, records or custom types.
+queues. This is a simlulation-only package to extend VHDL testbenches
+with queue functionality. The package is parametrized with the queue
+item data type, so it can be used with any VHDL data type. Examples
+could be queues of `integer`, `std_logic_vector`, `real`, records or
+custom types.
 
 ## Methods
 
@@ -12,10 +14,11 @@ it can be used with any VHDL data type. Examples could be queues of
 | size        | returns the number of items in the queue               |
 | insert      | inserts the given item at the specified index position |
 | delete      | deletes the item at the specified index position       |
-| push\_front | inserts the given element at the front of the queue    |
-| push\_back  | inserts the given element at the end of the queue      |
-| pop\_front  | removes and returns the first element of the queue     |
-| pop\_back   | removes and returns the last element of the queue      |
+| push\_front | inserts the given item at the front of the queue       |
+| push\_back  | inserts the given item at the end of the queue         |
+| pop\_front  | removes and returns the first item of the queue        |
+| pop\_back   | removes and returns the last item of the queue         |
+
 
 ## Examples
 
